@@ -1,7 +1,7 @@
 /*Estilo do Corpo*/
 body {
     /*background-image: url("../imagens/bg-1.jfif");*/
-    background-color: #222831;
+    background-color: #1B1A55;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -10,11 +10,11 @@ body {
 
 /* Estilo do Container Padrão */
 .container-1 {
-    background-color: #31363F;
+    background-color: #535C91;
     padding: 10px;
     text-align: center;
     color: white;
-    margin: 80px;
+    margin: 30px;
     margin-top: 20px;
     border: solid 1px;
     border-color: white;
@@ -23,7 +23,7 @@ body {
 }
 
 .container-flex {
-    background-color: #76ABAE;
+    background-color: #9290C3;
     text-align: center;
     font-weight: bold;
     font-size: large;
@@ -76,6 +76,11 @@ body {
     }
   }
 
+.navbar{
+    background-color: #535090;
+}
 /*
-    Paleta de cores: https://colorhunt.co/palette/22283131363f76abaeeeeeee
+    Paleta de cores:https://colorhunt.co/palette/22283131363f76abaeeeeeee
+
+    Atual:  https://colorhunt.co/palette/070f2b1b1a55535c919290c3
 */

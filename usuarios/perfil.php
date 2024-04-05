@@ -12,30 +12,146 @@
 </head>
 
 <body>
-    
+
     <!-- Checagem de login e adição de menu -->
     <?php
-        include('../funcoes/protect.php');
-        include('../utils/menuLogin.php');
+    include('../funcoes/protect.php');
+    include('../utils/menuLogin.php');
     ?>
 
     <!-- Criação do Container -->
     <div class="container-1">
+        <div class="row m-2 justify-content-center">
+            Página de Perfil
+        </div>
+        <table class="table table-dark">
+            <tbody>
+                <tr>
+                    <td style="width: 20%;">
+                        <table class="table table-dark table-bordered">
+                            <tr>
+                                <td>
+                                    Foto de Perfil
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width: 80%;">
+                        <table class="table table-dark table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Dados
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>
+                                    <form action="/site-pi/usuarios/iu_usuario.php" method="POST"><!-- Inicio Formulário -->
+                                        <div class="form-group">
+                                            <!-- Nome, CPF e Data Nascimento -->
+                                            <div class="form-row justify-content-center mt-2">
+                                                <div class="col-sm-6">
+                                                    <label for="nome">Nome Completo</label>
+                                                    <input type="text" class="form-control" id="nome" name="nome">
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <label for="cpf">CPF</label>
+                                                    <input type="text" class="form-control" id="cpf" name="cpf" maxlength="14" onkeypress="mascara('###.###.###-##', this)">
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <label for="nascimento">Nascimento</label>
+                                                    <input type="date" class="form-control" id="nascimento" name="nascimento">
+                                                </div>
+                                            </div>
 
-        <!-- Mensagem de Apresentação -->
-        <div class="row mt-3 justify-content-center">
-            <?php 
-            echo "<p>Bem Vindo <b>" . $_SESSION['nome'] . "</b> !!!</p>";
-            ?>
-        </div>
-        <div class="row justify-content-center m-3">
-            <div class="col-sm-12">
-                <a href="lista_usuarios.php" style="color: white;">Acessar a Lista de Usuários</a>
-            </div>
-        </div>
+                                            <!-- Celular e Email -->
+                                            <div class="form-row justify-content-center mt-2">
+                                                <div class="col-sm-3">
+                                                    <label for="celular">Celular</label>
+                                                    <input type="celular" class="form-control" id="celular" name="celular" maxlength="15" onkeypress="mascara('(##) #####-####', this)">
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label for="email">Email</label>
+                                                    <input type="email" class="form-control" id="email" name="email" autocomplete="on">
+                                                </div>
+                                            </div>
+
+                                            <!-- Endereço -->
+                                            <div class="row justify-content-center mt-2">
+                                                <div class="col-sm-2">
+                                                    <label for="cep">CEP</label>
+                                                    <input type="text" class="form-control" id="cep" name="cep" maxlength="9" onkeypress="mascara('#####-###', this)">
+                                                </div>
+                                                <div class="col-sm-5">
+                                                    <label for="logradouro">Logradouro</label>
+                                                    <input type="text" class="form-control" id="logradouro" name="logradouro">
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <label for="numLogradouro">Número</label>
+                                                    <input type="number" class="form-control" id="numLogradouro" name="numLogradouro">
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <label for="complemento">Complemento</label>
+                                                    <input type="text" class="form-control" id="complemento" name="complemento">
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center mt-2">
+                                                <div class="col-sm-3">
+                                                    <label for="bairro">Bairro</label>
+                                                    <input type="text" class="form-control" id="bairro" name="bairro">
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label for="cidade">Cidade</label>
+                                                    <input type="text" class="form-control" id="cidade" name="cidade">
+                                                </div>
+                                                <div class="col-sm-1">
+                                                    <label for="estado">Estado</label>
+                                                    <div class="input-group">
+                                                        <select class="custom-select" id="estado" name="estado">
+                                                            <option selected>Escolher...</option>
+                                                            <option value="AC">AC</option>
+                                                            <option value="AL">AL</option>
+                                                            <option value="AP">AP</option>
+                                                            <option value="AM">AM</option>
+                                                            <option value="BA">BA</option>
+                                                            <option value="CE">CE</option>
+                                                            <option value="DF">DF</option>
+                                                            <option value="ES">ES</option>
+                                                            <option value="GO">GO</option>
+                                                            <option value="MA">MA</option>
+                                                            <option value="MT">MT</option>
+                                                            <option value="MS">MS</option>
+                                                            <option value="MG">MG</option>
+                                                            <option value="PA">PA</option>
+                                                            <option value="PB">PB</option>
+                                                            <option value="PR">PR</option>
+                                                            <option value="PE">PE</option>
+                                                            <option value="PI">PI</option>
+                                                            <option value="RJ">RJ</option>
+                                                            <option value="RN">RN</option>
+                                                            <option value="RS">RS</option>
+                                                            <option value="RO">RO</option>
+                                                            <option value="RR">RR</option>
+                                                            <option value="SC">SC</option>
+                                                            <option value="SP">SP</option>
+                                                            <option value="SE">SE</option>
+                                                            <option value="TO">TO</option>
+                                                            <option value="EX">Estrangeiro</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
     </div>
-    
+
     <!-- Links Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
@@ -43,7 +159,7 @@
     <!-- Rodapé -->
     <footer>
         <?php
-            include_once('../footer.php');
+        include_once('../utils/footer.php');
         ?>
     </footer>
 

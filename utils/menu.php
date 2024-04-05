@@ -1,6 +1,6 @@
 <!-- Menu NavBar Deslogado -->
 <div class="container mt-3">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" style="border-radius: 12px;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-faded" style="border-radius: 12px;">
     <a class="navbar-brand" href="/site-pi/index.php">
       <img class="logo" src="/site-pi/imagens/Logo.png" width="70px" height="40px" alt="" /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
