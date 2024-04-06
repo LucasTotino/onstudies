@@ -16,7 +16,7 @@
     <!-- Checagem de login e adição de menu -->
     <?php
         include('protect.php');
-        include('menuLogin.php');
+        include('menu.php');
     ?>
 
     <!-- Criação do Container -->

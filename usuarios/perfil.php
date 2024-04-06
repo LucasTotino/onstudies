@@ -16,7 +16,7 @@
     <!-- Checagem de login e adição de menu -->
     <?php
     include('../funcoes/protect.php');
-    include('../utils/menuLogin.php');
+    include('../utils/menu.php');
     ?>
 
     <!-- Criação do Container -->
@@ -109,37 +109,20 @@
                                                     <label for="estado">Estado</label>
                                                     <div class="input-group">
                                                         <select class="custom-select" id="estado" name="estado">
-                                                            <option selected>Escolher...</option>
-                                                            <option value="AC">AC</option>
-                                                            <option value="AL">AL</option>
-                                                            <option value="AP">AP</option>
-                                                            <option value="AM">AM</option>
-                                                            <option value="BA">BA</option>
-                                                            <option value="CE">CE</option>
-                                                            <option value="DF">DF</option>
-                                                            <option value="ES">ES</option>
-                                                            <option value="GO">GO</option>
-                                                            <option value="MA">MA</option>
-                                                            <option value="MT">MT</option>
-                                                            <option value="MS">MS</option>
-                                                            <option value="MG">MG</option>
-                                                            <option value="PA">PA</option>
-                                                            <option value="PB">PB</option>
-                                                            <option value="PR">PR</option>
-                                                            <option value="PE">PE</option>
-                                                            <option value="PI">PI</option>
-                                                            <option value="RJ">RJ</option>
-                                                            <option value="RN">RN</option>
-                                                            <option value="RS">RS</option>
-                                                            <option value="RO">RO</option>
-                                                            <option value="RR">RR</option>
-                                                            <option value="SC">SC</option>
-                                                            <option value="SP">SP</option>
-                                                            <option value="SE">SE</option>
-                                                            <option value="TO">TO</option>
-                                                            <option value="EX">Estrangeiro</option>
+                                                            <option></option>
                                                         </select>
                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-row justify-content-center mt-2">
+                                                <div class="col-sm-2">
+                                                    <label for="aluno"><input type="radio" id="aluno" name="qualificacao"> Aluno</label>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <label for="professor"><input type="radio" id="professor" name="qualificacao"> Professor</label>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <label for="ambos"><input type="radio" id="ambos" name="qualificacao"> Ambos</label>
                                                 </div>
                                             </div>
                                 </td>
@@ -155,7 +138,7 @@
     <!-- Links Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="../js/script.js"></script>
     <!-- Rodapé -->
     <footer>
         <?php

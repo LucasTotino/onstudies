@@ -19,11 +19,11 @@ include('../funcoes/conexao.php');
     <!-- Checagem de login e adição de menu -->
     <?php
     include('../funcoes/protect.php');
-    include('../utils/menuLogin.php');
+    include('../utils/menu.php');
     ?>
 
     <!-- Criação do Container -->
-    <div class="container-1">
+    <div class="container-1 mb-5">
 
         <!-- Mensagem de Apresentação -->
         <div class="row mt-3 justify-content-center">

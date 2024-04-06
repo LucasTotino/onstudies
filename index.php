@@ -18,7 +18,7 @@
             if (!isset($_SESSION)) {
                 include('utils/menu.php');
             } else {
-                include('utils/menuLogin.php');
+                include('utils/menu.php');
             }
         ?>
     </header>

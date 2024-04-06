@@ -65,10 +65,9 @@ $msgErro = '';
         ?>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="box mt-3" style="width: 30%;">
+                <div class="box mt-3">
                     <!-- Inicio Container Principal -->
                     <div class="container-1" style="padding: 0; margin: 0;">
-                        <img class="logo-login mt-3" src="/site-pi/imagens/Logo 2.png" style="width: 20%;">
                         <!-- Inicio Formulário -->
                         <form action="" method="POST">
                             <div class="form-group">

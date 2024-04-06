@@ -79,6 +79,16 @@ body {
 .navbar{
     background-color: #535090;
 }
+
+.box{
+    width: 30%;
+}
+@media (max-width: 480px) {
+    .box{
+        width: 80%;
+    }    
+} 
+
 /*
     Paleta de cores:https://colorhunt.co/palette/22283131363f76abaeeeeeee
 
