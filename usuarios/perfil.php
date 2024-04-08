@@ -64,16 +64,24 @@ include('../funcoes/conexao.php');
             <tbody>
                 <tr>
                     <td style="width: 20%;">
-                        <table class="table table-dark table-bordered">
+                        <table class="table table-dark">
                             <tr>
                                 <td>
-                                    Foto de Perfil
+                                    <div class="box-foto">
+                                        <img src="../imagens/user_default.png" style="width: 100%; height:auto;" id="preview" name="preview">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="photo-select">
+                                        <input type="file" id="fotoPerfil" style="display: none;"></input>Alterar Foto</button>
                                 </td>
                             </tr>
                         </table>
                     </td>
                     <td style="width: 80%;">
-                        <table class="table table-dark table-bordered">
+                        <table class="table table-dark">
                             <thead>
                                 <tr>
                                     <th>

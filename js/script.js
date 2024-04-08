@@ -29,3 +29,24 @@ function mascara(mascara, documento) {
         texto = mascara.substring(i);
     }
 }
+
+// Foto de Perfil
+const arquivoFoto = document.getElementById('fotoPerfil')
+
+document.getElementById('photo-select')
+.onclick = function() {
+    arquivoFoto.click()
+}
+
+window.addEventListener('DOMContentLoaded', ()=>{
+    arquivoFoto.addEventListener('change', ()=> {
+        let arquivo = arquivoFoto.files.item(0)
+        // ler o arquivo
+        let leitor = new FileReader()
+        leitor.readAsDataURL(arquivo)
+        leitor.onload = function(event){
+            let imagem = document.getElementById('preview')
+            imagem.src = event.target.result
+        }
+    })
+})

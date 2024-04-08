@@ -31,7 +31,7 @@
         </div>
 
         <div class="row justify-content-center">
-            <img class="logo-login m-3" src="/site-pi/imagens/Logo 2.png" style="width: 10%;">
+            <img class="logo-login m-3" src="/site-pi/imagens/logopog2.png" style="width: 10%;">
         </div>
 
         <div class="row justify-content-center m-3">
