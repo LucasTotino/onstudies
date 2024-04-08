@@ -1,3 +1,4 @@
+// Criando a consulta de Ufs e linkando com o id do select
 const ulrUF = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados';
 const uf = document.getElementById("estado");
 window.addEventListener('load', carregaUF)

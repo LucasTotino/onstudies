@@ -1,5 +1,8 @@
 <?php
-include('../funcoes/conexao.php');
+    
+    // Iniciando a conexão com o DB
+    include('../funcoes/conexao.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -24,9 +27,9 @@ include('../funcoes/conexao.php');
 
     <!-- Criação do Container -->
     <div class="container-1 mb-5">
-
-        <!-- Mensagem de Apresentação -->
         <div class="row mt-3 justify-content-center">
+            
+            <!-- Busca no DB -->
             <?php
             $lista = sprintf("SELECT nome, email FROM usuarios");
 
@@ -37,6 +40,7 @@ include('../funcoes/conexao.php');
             $total = mysqli_num_rows($dados);
 
             ?>
+            <!-- Mensagem de Apresentação -->
             <div class="container-2">
                 <table class="table table-dark table-bordered">
                     <thead>
