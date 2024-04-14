@@ -8,7 +8,7 @@
 
     <!-- Links CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/site-pi/css/styles.css" />
+    <link rel="stylesheet" href="/onstudies/css/styles.css" />
 </head>
 
 <body>
@@ -31,12 +31,12 @@
         </div>
 
         <div class="row justify-content-center">
-            <img class="logo-login m-3" src="/site-pi/imagens/logopog2.png" style="width: 10%;">
+            <img class="logo-login m-3" src="/onstudies/imagens/logopog2.png" style="width: 10%;">
         </div>
 
         <div class="row justify-content-center m-3">
             <div class="col-sm-12">
-                <a href="/site-pi/usuarios/list_user.php" style="color: white;">Acessar a Lista de Usuários</a>
+                <a href="/onstudies/usuarios/list_user.php" style="color: white;">Acessar a Lista de Usuários</a>
             </div>
         </div>
 

@@ -17,7 +17,7 @@ include('../funcoes/conexao.php');
 
     <!-- Links CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/site-pi/css/styles.css" />
+    <link rel="stylesheet" href="/onstudies/css/styles.css" />
 </head>
 
 <body>
@@ -91,7 +91,7 @@ include('../funcoes/conexao.php');
                             </thead>
                             <tr>
                                 <td>
-                                    <form action="/site-pi/usuarios/iu_usuario.php" method="POST"><!-- Inicio Formulário -->
+                                    <form action="/onstudies/usuarios/iu_usuario.php" method="POST"><!-- Inicio Formulário -->
                                         <div class="form-group">
                                             <!-- Nome, CPF e Data Nascimento -->
                                             <div class="form-row justify-content-center mt-2">

@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/site-pi/css/styles.css" />
+    <link rel="stylesheet" href="/onstudies/css/styles.css" />
 
 </head>
 
@@ -67,7 +67,7 @@ if (isset($_POST['submit'])) {
         }
         ?>
 
-        <form action="/site-pi/usuarios/iu_usuario.php" method="POST"><!-- Inicio Formulário -->
+        <form action="/onstudies/usuarios/iu_usuario.php" method="POST"><!-- Inicio Formulário -->
             <div class="form-group">
                 <!-- Nome, CPF e Data Nascimento -->
                 <div class="form-row justify-content-center mt-2">
@@ -178,7 +178,7 @@ if (isset($_POST['submit'])) {
                         <button type="reset" class="btn btn-warning">Cancelar</button>
                     </div>
                     <div class="col-sm-3 mt-3">
-                        <a href="/site-pi/index.php"><button type="button" class="btn btn-danger">Voltar</button></a>
+                        <a href="/onstudies/index.php"><button type="button" class="btn btn-danger">Voltar</button></a>
                     </div>
                 </div>
             </div>
@@ -188,7 +188,7 @@ if (isset($_POST['submit'])) {
     <!-- Links Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <script src="/site-pi/js/script.js"></script>
+    <script src="/onstudies/js/script.js"></script>
     <!-- Rodapé -->
     <footer>
         <?php

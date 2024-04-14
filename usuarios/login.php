@@ -15,7 +15,7 @@ $msgErro = '';
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/site-pi/css/styles.css" />
+    <link rel="stylesheet" href="/onstudies/css/styles.css" />
 
 </head>
 
@@ -88,12 +88,12 @@ $msgErro = '';
                                 <!-- Botão de Login e verificação -->
                                 <div class="form-row justify-content-center">
                                     <div class="col-sm-4 mt-3">
-                                        <button type="submit" class="btn btn-primary" onclick="window.opener.location.href='/site-pi/utils/menu.php'">Entrar</button>
+                                        <button type="submit" class="btn btn-primary" onclick="window.opener.location.href='/onstudies/utils/menu.php'">Entrar</button>
 
                                     </div>
                                     <!-- Botão de cadastro -->
                                     <div class="col-sm-4 mt-3">
-                                        <a href="/site-pi/usuarios/iu_usuario.php" style="color: white;"><button type="button" class="btn btn-secondary">Cadastrar</button></a>
+                                        <a href="/onstudies/usuarios/iu_usuario.php" style="color: white;"><button type="button" class="btn btn-secondary">Cadastrar</button></a>
                                     </div>
 
                                 </div>
