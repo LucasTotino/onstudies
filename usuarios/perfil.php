@@ -1,10 +1,7 @@
 <?php
 
-
 // Iniciando a conexão com o DB
 include('../funcoes/conexao.php');
-
-    
 
 ?>
 <!DOCTYPE html>
@@ -26,7 +23,7 @@ include('../funcoes/conexao.php');
     <?php
     include('../funcoes/protect.php');
     include('../utils/menu.php');
-    
+
     $lista = sprintf("SELECT * FROM usuarios WHERE id = $_SESSION[id]");
 
     $dados = $mysqli->query($lista) or die("Falha ao conectar ao banco de dados: " . $mysqli->error);
@@ -35,22 +32,34 @@ include('../funcoes/conexao.php');
 
     $total = mysqli_num_rows($dados);
 
-    if(isset($linha['id'])){
-    $nome = $linha['nome'];
-    $cpf = $linha['cpf'];
-    $nascimento = $linha['data_nascimento'];
-    $celular = $linha['celular'];
-    $email = $linha['email'];
-    $cep = $linha['cep'];
-    $logradouro = $linha['logradouro'];
-    $numLogradouro = $linha['numero'];
-    $complemento = $linha['complemento'];
-    $bairro = $linha['bairro'];
-    $cidade = $linha['cidade'];
-    $estado = $linha['estado'];
-    $qualificacao = $linha['qualificacao'];
+    if (isset($linha['id'])) {
+        $nome = $linha['nome'];
+        $cpf = $linha['cpf'];
+        $nascimento = $linha['data_nascimento'];
+        $celular = $linha['celular'];
+        $email = $linha['email'];
+        $cep = $linha['cep'];
+        $logradouro = $linha['logradouro'];
+        $numLogradouro = $linha['numero'];
+        $complemento = $linha['complemento'];
+        $bairro = $linha['bairro'];
+        $cidade = $linha['cidade'];
+        $estado = $linha['estado'];
+        $qualificacao = $linha['qualificacao'];
+        $imagem = $linha['imagem'];
 
-    $senha = $linha['senha'];
+        if (isset($_FILES['fotoPerfil']) && !empty($_FILES['fotoPerfil'])) {
+            $imagem = "../imagens/usuarios/" . $_FILES["fotoPerfil"]["name"];
+            move_uploaded_file($_FILES["fotoPerfil"]["tmp_name"], $imagem);
+        } else {
+            $imagem = "../imagens/usuarios/user_default.png";
+        }
+
+        if (isset($_FILES['fotoPerfil'])) {
+            $result = mysqli_query($mysqli, "INSERT INTO usuarios (imagem) VALUES ('$imagem')");
+        }
+
+        $senha = $linha['senha'];
     }
 
     ?>
@@ -68,14 +77,17 @@ include('../funcoes/conexao.php');
                             <tr>
                                 <td>
                                     <div class="box-foto">
-                                        <img src="../imagens/user_default.png" style="width: 100%; height:auto;" id="preview" name="preview">
+                                        <img src="<?= $imagem ?>" style="width: 100%; height:auto;" id="preview" name="preview">
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <button id="photo-select">
-                                        <input type="file" id="fotoPerfil" style="display: none;"></input>Alterar Foto</button>
+                                    <form action="/onstudies/usuarios/perfil.php" method="post" enctype="multipart/form-data">
+                                        <button id="photo-select">
+                                            <input type="file" id="fotoPerfil" style="display: none;"></input>Alterar Foto
+                                        </button>
+                                    </form>
                                 </td>
                             </tr>
                         </table>
@@ -101,7 +113,7 @@ include('../funcoes/conexao.php');
                                                 </div>
                                                 <div class="col-sm-3">
                                                     <label for="cpf">CPF</label>
-                                                    <input type="text"  class="form-control" id="cpf" name="cpf" maxlength="14" onkeypress="mascara('###.###.###-##', this)" value="<?= $cpf ?>" readonly>
+                                                    <input type="text" class="form-control" id="cpf" name="cpf" maxlength="14" onkeypress="mascara('###.###.###-##', this)" value="<?= $cpf ?>" readonly>
                                                 </div>
                                                 <div class="col-sm-2">
                                                     <label for="nascimento">Nascimento</label>
