@@ -1,4 +1,4 @@
-/*Estilo do Corpo*/
+/* Estilo do Corpo */
 body {
     /*background-image: url("../imagens/bg-1.jfif");*/
     background-color: #1B1A55;
@@ -22,6 +22,7 @@ body {
     box-shadow: 2px 2px 2px 1px black;
 }
 
+/* Estilo container Footer */
 .container-flex {
     background-color: #9290C3;
     text-align: center;
@@ -32,6 +33,7 @@ body {
     width: 100%;
 }
 
+/* Estilo container Lista de Usuários */
 .container-2 {
     background-color: #31363F;
     padding: 10px;
@@ -43,14 +45,12 @@ body {
     border-radius: 12px;
 }
 
-.card {
-    background: none;
-}
-
+/* Animação do login  */
 .logo-login{
     animation: go-back 3s infinite alternate;
 }
 
+/* Animação do login  */
 @keyframes go-back {
     from {
       transform: scale(1);
@@ -60,10 +60,11 @@ body {
     }
   }
 
+/* Animação do logo giratório  */
   .logo{
     animation: spin 5s ease-in-out infinite;
   }
-
+/* Animação do logo giratório  */
   @keyframes spin {
     25% {
         transform: scaleX(1);
@@ -76,10 +77,12 @@ body {
     }
   }
 
+/* Estilo da barra de navegação  */
 .navbar{
     background-color: #535090;
 }
 
+/* Estilo da caixa da tela de Login */
 .box{
     width: 30%;
 }
@@ -89,6 +92,7 @@ body {
     }    
 } 
 
+/* Estilo da caixa da Foto na tela de Perfil */
 .box-foto{
     width: 300px;
     height: 300px;
@@ -98,6 +102,7 @@ body {
     border-radius: 100%;
     overflow: hidden;
 }
+
 /*
     Paleta de cores:https://colorhunt.co/palette/22283131363f76abaeeeeeee
 

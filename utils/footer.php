@@ -1,1 +1,1 @@
-<div class="container-flex">Projeto desenvolvido por: Lucas Sanchez Totino</div>
+<div class="container-flex">Develop by: Lucas Sanchez Totino</div>

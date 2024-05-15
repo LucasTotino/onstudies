@@ -20,8 +20,9 @@ $msgErro = '';
 </head>
 
 <body>
-    <!-- Incluindo o Menu -->
+
     <header>
+        <!-- Incluindo o Menu -->
         <?php
         include('../utils/menu.php');
         ?>

@@ -14,27 +14,27 @@
 <body>
     <header>
         <?php
-            //Determinação de menu
-            if (!isset($_SESSION)) {
-                include('utils/menu.php');
-            } else {
-                include('utils/menu.php');
-            }
+        //Determinação de menu
+        if (!isset($_SESSION)) {
+            include('utils/menu.php');
+        } else {
+            include('utils/menu.php');
+        }
         ?>
     </header>
-
-    <!-- Começo do Container Principal -->
-    <div class="container-1">
-        <!-- Mensagem Inicial -->
-        <h1><b>Bem vindo ao OnStudies !!!</b></h1>
-        <br>
-        <br>
-        <br>
-        Seu site de streaming e vídeoaulas.
-        <br>
-        <br>
-    </div>
-
+    <main>
+        <!-- Começo do Container Principal -->
+        <div class="container-1">
+            <!-- Mensagem Inicial -->
+            <h1><b>Bem vindo ao OnStudies !!!</b></h1>
+            <br>
+            <br>
+            <br>
+            Seu site de streaming e vídeoaulas.
+            <br>
+            <br>
+        </div>
+    </main>
 
     <!-- Links Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
     <!-- Rodapé -->
     <footer>
         <?php
-            include_once('utils/footer.php');
+        include_once('utils/footer.php');
         ?>
     </footer>
 </body>

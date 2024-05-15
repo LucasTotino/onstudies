@@ -3,12 +3,6 @@
 if (!isset($_SESSION)) {
     session_start();
 }
-?>
-
-<!-- Vinculação do CSS de estilos -->
-<link rel="stylesheet" href="../css/styles.css" />
-
-<?php
 
 // Se a sessão não localizar id
 if (!isset($_SESSION['id'])) {

@@ -8,5 +8,6 @@ if(!isset($_SESSION)) {
 //Destruição da sessão (logout)
 session_destroy();
 
+//Página para onde volta quando é feito o logout
 header("Location: ../index.php");
 ?>

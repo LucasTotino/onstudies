@@ -31,7 +31,7 @@ function mascara(mascara, documento) {
 }
 
 // Foto de Perfil
-/*const arquivoFoto = document.getElementById('fotoPerfil')
+const arquivoFoto = document.getElementById('fotoPerfil')
 
 document.getElementById('photo-select')
 .onclick = function() {
@@ -49,4 +49,4 @@ window.addEventListener('DOMContentLoaded', ()=>{
             imagem.src = event.target.result
         }
     })
-})*/
+})
